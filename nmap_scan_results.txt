@@ -1,0 +1,50 @@
+# Nmap 7.98 scan initiated Thu Feb  5 21:46:19 2026 as: /usr/lib/nmap/nmap --privileged -sV -oN nmap_scan_results.txt 10.0.2.15/24
+Nmap scan report for 10.0.2.2
+Host is up (0.0018s latency).
+Not shown: 984 filtered tcp ports (no-response)
+PORT     STATE SERVICE      VERSION
+7/tcp    open  echo
+9/tcp    open  discard?
+13/tcp   open  tcpwrapped
+17/tcp   open  tcpwrapped
+19/tcp   open  chargen
+80/tcp   open  http         Microsoft IIS httpd 10.0
+135/tcp  open  msrpc        Microsoft Windows RPC
+445/tcp  open  microsoft-ds Microsoft Windows 7 - 10 microsoft-ds (workgroup: WORKGROUP)
+1801/tcp open  msmq?
+2103/tcp open  msrpc        Microsoft Windows RPC
+2105/tcp open  msrpc        Microsoft Windows RPC
+2107/tcp open  msrpc        Microsoft Windows RPC
+2179/tcp open  vmrdp?
+8443/tcp open  https-alt?
+9010/tcp open  websocket    WebSocket++ 0.8.2
+9080/tcp open  glrpc?
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port9080-TCP:V=7.98%I=7%D=2/5%Time=69855608%P=x86_64-pc-linux-gnu%r(Get
+SF:Request,47,"HTTP/1\.1\x20301\x20Moved\x20Permanently\nLocation:\x20abou
+SF:t:blank\nConnection:\x20close\n")%r(GenericLines,47,"HTTP/1\.1\x20301\x
+SF:20Moved\x20Permanently\nLocation:\x20about:blank\nConnection:\x20close\
+SF:n")%r(HTTPOptions,47,"HTTP/1\.1\x20301\x20Moved\x20Permanently\nLocatio
+SF:n:\x20about:blank\nConnection:\x20close\n")%r(RTSPRequest,47,"HTTP/1\.1
+SF:\x20301\x20Moved\x20Permanently\nLocation:\x20about:blank\nConnection:\
+SF:x20close\n")%r(FourOhFourRequest,47,"HTTP/1\.1\x20301\x20Moved\x20Perma
+SF:nently\nLocation:\x20about:blank\nConnection:\x20close\n")%r(SIPOptions
+SF:,47,"HTTP/1\.1\x20301\x20Moved\x20Permanently\nLocation:\x20about:blank
+SF:\nConnection:\x20close\n");
+MAC Address: 52:55:0A:00:02:02 (Unknown)
+Service Info: Host: PANDA; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Nmap scan report for 10.0.2.3
+Host is up (0.00010s latency).
+Not shown: 999 filtered tcp ports (net-unreach)
+PORT   STATE SERVICE VERSION
+53/tcp open  domain  dnsmasq 2.51
+MAC Address: 52:55:0A:00:02:03 (Unknown)
+
+Nmap scan report for 10.0.2.15
+Host is up.
+All 1000 scanned ports on 10.0.2.15 are in ignored states.
+Not shown: 1000 filtered tcp ports (no-response)
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Feb  5 21:52:25 2026 -- 256 IP addresses (3 hosts up) scanned in 366.14 seconds
